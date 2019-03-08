@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/passcode_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/logoIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/piggy_bank" />
+
+            <TextView
+                android:id="@+id/passcodeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logoIV"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/logoIV"
+                android:gravity="center_vertical"
+                android:text="Passcode"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/passcodeTV"
+                android:layout_below="@+id/passcodeTV"
+                android:text="to login to the app"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/passcode_view_rl"
+            android:layout_below="@+id/passcode_title_rl"
+            android:layout_marginBottom="25dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/passcode_input_view_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edittext_rounded_corners_border"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/circleIV_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="18dp"
+                            android:src="@drawable/ic_circle"
+                            android:tint="@color/colorWhite"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/pinTV_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edittext_rounded_corners_border"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/circleIV_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="18dp"
+                            android:src="@drawable/ic_circle"
+                            android:tint="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/pinTV_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edittext_rounded_corners_border"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/circleIV_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="18dp"
+                            android:src="@drawable/ic_circle"
+                            android:tint="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/pinTV_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edittext_rounded_corners_border"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/circleIV_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="18dp"
+                            android:src="@drawable/ic_circle"
+                            android:tint="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/pinTV_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/forgot_password_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passcode_input_view_rl">
+
+                <TextView
+                    android:id="@+id/forgot_password_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/key_press_bg"
+                    android:padding="20dp"
+                    android:text="Forgot passcode?"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/show_entered_pin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/key_press_bg"
+                    android:drawableLeft="@drawable/ic_visibility_on"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/hide_entered_pin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/key_press_bg"
+                    android:drawableLeft="@drawable/ic_visibility_off"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="HIDE"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/passcode_view_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="3"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="4"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="5"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="6"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="7"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="8"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="9"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/login_passcode_key_backspace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_backspace"
+                        android:tint="@color/colorPrimary"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/login_passcode_key_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/login_passcode_key_padding"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/login_passcode_key_text_size" />
+
+                    <ImageView
+                        android:id="@+id/login_passcode_key_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/key_press_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_done"
+                        android:tint="@color/colorPrimary"
+                        tools:ignore="VectorDrawableCompat" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressBarRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/topLayout"
+        android:layout_alignTop="@+id/topLayout"
+        android:background="@color/progress_bar_layout_color"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/showProgressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

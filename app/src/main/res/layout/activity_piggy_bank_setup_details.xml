@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroolView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/topll" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/piggy_bank" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/PiggyBankNameTv" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/piggyName" android:layout_below="@+id/image"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/piggyBankDiscription" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/piggySetUpDescription" android:layout_below="@+id/PiggyBankNameTv"/>
+            <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/piggyBankDiscription">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/topLayout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                    <TextView android:textSize="18sp" android:layout_gravity="center" android:id="@+id/selectAmountTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/selectAccount" android:layout_weight="0.7"/>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/spinner_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <Spinner android:id="@+id/spinnerData" android:layout_width="match_parent" android:layout_height="30dp"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/middle" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topLayout">
+                    <TextView android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/piggyName" android:layout_weight="0.7"/>
+                    <EditText android:id="@+id/piggyBankNameEt" android:background="@drawable/spinner_border" android:paddingLeft="5dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="30dp" android:maxLines="1" android:maxLength="10" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO PQRSTUVWXYZ0123456789" android:layout_weight="0.5" android:inputType="none|text|textCapSentences|textEmailAddress|textShortMessage|textPersonName"/>
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/continuee" android:background="@drawable/click_action" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="@string/Continue" android:layout_below="@+id/middle"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:id="@+id/progressBarRL" android:background="@color/progress_bar_layout_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/scroolView" android:layout_alignBottom="@+id/scroolView">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge"/>
+    </RelativeLayout>
+</RelativeLayout>

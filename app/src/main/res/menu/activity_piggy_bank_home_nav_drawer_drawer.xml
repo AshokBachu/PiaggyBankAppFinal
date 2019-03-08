@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home_black_24dp" android:id="@+id/nav_home" android:title="Home"/>
+        <item android:icon="@drawable/ic_power_settings_new_black_24dp" android:id="@+id/disconnect" android:title="Disconnect"/>
+    </group>
+</menu>

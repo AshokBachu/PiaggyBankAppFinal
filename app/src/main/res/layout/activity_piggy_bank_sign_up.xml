@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:keepScreenOn="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/colorPrimary" android:paddingLeft="5dp" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="Signup" android:maxLines="1"/>
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/step1" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <LinearLayout android:orientation="vertical" android:id="@+id/sign_up_ll_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <TextView android:textSize="14sp" android:textColorHint="@color/colorEditTextTitleHint" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="FULL NAME" android:layout_alignParentBottom="true" android:textAllCaps="true"/>
+                                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/login_ll" android:background="@drawable/clisk_here_text_background" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColorHint="@color/gray_color" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Click here to " android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColorHint="@color/colorPrimary" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="LOGIN" android:textAllCaps="true"/>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                    <EditText android:textSize="20sp" android:textColor="@color/edit_text_white" android:textColorHint="@color/colorEditTextHint" android:id="@+id/name_et" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" android:maxLines="1" android:maxLength="20" android:digits="@string/allownonSymbols" android:inputType="none|text|textCapSentences|textEmailAddress|textShortMessage|textPersonName" android:textCursorDrawable="@drawable/cursor_color"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/sign_up_ll_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                                    <TextView android:textSize="14sp" android:textColorHint="@color/colorEditTextTitleHint" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="CONTACT NUMBER" android:textAllCaps="true"/>
+                                    <EditText android:textSize="20sp" android:textColor="@color/edit_text_white" android:textColorHint="@color/colorEditTextHint" android:id="@+id/mobile_number_et" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="10 Digit Mobile Number" android:maxLines="1" android:maxLength="10" android:digits="0123456789" android:inputType="phone" android:textCursorDrawable="@drawable/cursor_color"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/step2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:id="@+id/sign_up_ll_login_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                                    <TextView android:textSize="14sp" android:textColorHint="@color/colorEditTextTitleHint" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="LOGIN PIN" android:textAllCaps="true"/>
+                                    <EditText android:textSize="20sp" android:textColor="@color/edit_text_white" android:textColorHint="@color/colorEditTextHint" android:id="@+id/login_pin_et" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="4 Digit Pin" android:maxLines="1" android:maxLength="4" android:digits="0123456789" android:inputType="numberPassword" android:textCursorDrawable="@drawable/cursor_color"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/sign_up_ll_confirm_login_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                                    <TextView android:textSize="14sp" android:textColorHint="@color/colorEditTextTitleHint" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="CONFIRM LOGIN PIN" android:textAllCaps="true"/>
+                                    <EditText android:textSize="20sp" android:textColor="@color/edit_text_white" android:textColorHint="@color/colorEditTextHint" android:id="@+id/confirm_login_pin_et" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Re-Enter 4 Digit Login Pin" android:maxLines="1" android:maxLength="4" android:digits="0123456789" android:inputType="numberPassword" android:textCursorDrawable="@drawable/cursor_color"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/step3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:id="@+id/sign_up_ll_upi_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                                    <TextView android:textSize="14sp" android:textColorHint="@color/colorEditTextTitleHint" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="TRANSACTION PIN" android:textAllCaps="true"/>
+                                    <EditText android:textSize="20sp" android:textColor="@color/edit_text_white" android:textColorHint="@color/colorEditTextHint" android:id="@+id/transaction_pin_et" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="6 Digit Transaction Pin" android:maxLines="1" android:maxLength="6" android:digits="0123456789" android:inputType="numberPassword" android:textCursorDrawable="@drawable/cursor_color"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/sign_up_ll_confirm_upi_pin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="14sp" android:textColorHint="@color/colorEditTextTitleHint" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="CONFIRM TRANSACTION PIN" android:textAllCaps="true"/>
+                                    <EditText android:textSize="20sp" android:textColor="@color/edit_text_white" android:textColorHint="@color/colorEditTextHint" android:id="@+id/confirm_transaction_pin_et" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Re-Enter 6 Digit Transaction Pin" android:maxLines="1" android:maxLength="6" android:digits="0123456789" android:inputType="numberPassword" android:textCursorDrawable="@drawable/cursor_color"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:background="@color/backgroundColor" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textColor="@color/hd_nb_green" android:gravity="center" android:id="@+id/sig_up_cancel_tv" android:background="@drawable/key_press_bg" android:padding="@dimen/login_passcode_key_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="CANCEL" android:layout_weight="1"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/sign_up_proceed_tv" android:background="@drawable/submit_bg" android:padding="@dimen/login_passcode_key_padding" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="PROCEED" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/backgroundColor" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="@color/gray_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SOCIALLY CONNECTED WITH" android:lineSpacingExtra="4sp"/>
+                        <ImageView android:layout_width="120dp" android:layout_height="22dp" android:layout_marginLeft="1dp" android:src="@drawable/hexadots_name_logo2" android:scaleType="fitStart"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/progressBarRL" android:background="@color/progress_bar_layout_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/topLayout" android:layout_alignBottom="@+id/topLayout">
+        <ProgressBar android:id="@+id/showProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

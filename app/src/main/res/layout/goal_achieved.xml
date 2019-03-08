@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cardBackgroundColor="#eeeeee" app:cardCornerRadius="5dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="10dp" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="48dp" android:layout_height="40dp" android:src="@drawable/cup_image"/>
+            <TextView android:textSize="10sp" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goalAchieved"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

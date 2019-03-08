@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/selctBackground" android:background="@drawable/ic_circle_amount" android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="8dp">
+        <ImageView android:id="@+id/imageViewRightMark" android:background="@drawable/ic_circle_right_mark_24dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="5dp" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textColor="#939090" android:gravity="center" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MUR" android:layout_weight="1"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:layout_gravity="top" android:id="@+id/amountText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="100" android:layout_weight="1" android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

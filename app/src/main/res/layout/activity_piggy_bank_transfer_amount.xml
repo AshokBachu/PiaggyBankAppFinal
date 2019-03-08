@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <ScrollView android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/recyclerViewLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="Select Amount To Transfer to MCB KLYA"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView android:id="@+id/recyclerViewOfAmounts" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp"/>
+                        <EditText android:id="@+id/customAmountEdittext" android:background="@drawable/amount_selection_et" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:hint="Enter Custom Amount"/>
+                    </LinearLayout>
+                    <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/customTransafer" android:background="@drawable/click_action" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="20dp" android:layout_marginRight="30dp" android:text="Transfer"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/manuvalTransfer" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="right" android:id="@+id/accountBalance" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Account Money : 123.89"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/accountBalance">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+                        <ImageView android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/piggy_bank" android:layout_weight="0.8"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.2">
+                            <android.support.v7.widget.CardView android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="5dp" app:cardUseCompatPadding="true">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter Amount"/>
+                                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="#eeeeee" android:padding="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="MUR" android:layout_weight="1"/>
+                                        <EditText android:textSize="30sp" android:textColor="#000000" android:id="@+id/amount" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="1dp" android:hint="0" android:maxLines="1" android:maxLength="4" android:layout_weight="1" android:inputType="number"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginRight="30dp" app:cardUseCompatPadding="true">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Description"/>
+                                    <android.support.v7.widget.CardView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <EditText android:textSize="18sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@+id/description" android:background="#eeeeee" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Description" android:maxLines="1" android:maxLength="20" android:inputType="none|text|textCapSentences|textEmailAddress|textShortMessage|textPersonName"/>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/transferToPiggyBank" android:background="@drawable/click_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:text="Submit"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:id="@+id/progressBarRl" android:background="@color/progress_bar_layout_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/topLayout" android:layout_alignBottom="@+id/topLayout">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/SkipTextView" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Skip >" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/animationPath" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/arrowImage" android:background="@drawable/arrowup" android:layout_width="50dp" android:layout_height="110dp" android:layout_marginBottom="100dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/animationPath" android:layout_alignBottom="@+id/animationPath" android:layout_centerInParent="true">
+        <android.support.v4.view.ViewPager android:id="@+id/viewPager" android:padding="@dimen/coinsPadding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="top" android:id="@+id/imageLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/imageAmount" android:visibility="invisible" android:layout_width="150dp" android:layout_height="100dp" android:layout_marginBottom="300dp" android:src="@drawable/piggy_bank" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/topLayout" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="45sp" android:textStyle="bold" android:textColor="@color/text_color_black" android:gravity="center" android:layout_gravity="center" android:id="@+id/amountSwipe" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0"/>
+            <TextView android:textColor="@color/text_color_black" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Swiped Amount"/>
+            <TextView android:textColor="#ff0000" android:gravity="center" android:layout_gravity="center" android:id="@+id/errorTextView" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="please swipe valid amount"/>
+            <ImageView android:layout_gravity="center" android:visibility="invisible" android:layout_width="50dp" android:layout_height="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/coinsLoading" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/normal_text" android:gravity="right" android:id="@+id/amountToUpdate" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Amount to Swipe" android:layout_weight="1"/>
+                <TextView android:textSize="20sp" android:textStyle="bold" android:layout_gravity="left" android:id="@+id/swipedAmount" android:paddingLeft="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Text" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/progressBarLayout" android:background="#3f4cff00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/maskScreen" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

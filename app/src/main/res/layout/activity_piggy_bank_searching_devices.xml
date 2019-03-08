@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/big_Text" android:textColor="#bb000000" android:gravity="center" android:id="@+id/searchForPiggysText" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/searchingForPiggys"/>
+        <com.skyfishjy.library.RippleBackground android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.4" app:rb_color="@color/colorPrimary" app:rb_duration="3000" app:rb_radius="32dp" app:rb_rippleAmount="2" app:rb_scale="6">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <RelativeLayout android:layout_gravity="center" android:background="@drawable/boarder_color" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@+id/centerImage" android:background="@drawable/background_round" android:padding="10dp" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/piggy_bank"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/normal_text" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/nodevicesFoundTv" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/nodeviceFound"/>
+            </LinearLayout>
+        </com.skyfishjy.library.RippleBackground>
+        <TextView android:textSize="@dimen/normal_text" android:gravity="center" android:id="@+id/description_text" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/searchingScreenDescription"/>
+        <RelativeLayout android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/socially_connected_with"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
